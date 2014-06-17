@@ -1,0 +1,344 @@
+/*  reset css. 
+	This's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/ 
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+input, keygen {
+	width: 150px;
+	height: 25px;
+	font-size: 15px;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+pre {
+	margin: -50px 0 -120px 0;
+}
+.scrollable {
+	height: 427px;
+	overflow-y:scroll;
+	width: 825px;
+}
+
+/* Custom style*/
+
+body{
+	background-color:#505050;
+}
+#mobile{
+	display:none;
+}
+header > nav{
+	position:fixed;
+	top:0px;
+	width:100%;
+	height:60px;
+	text-align:center;
+	background:black;
+	opacity:0.7;
+	z-index: 1;
+	margin:0 0 0 -7px;
+}
+header > nav > ul{
+	margin:20px; 0 0 0;
+}
+header > nav > ul > li{
+	display:inline;
+	list-style:none;
+	padding:0 0 15px 0;
+	text-transform:uppercase;
+}
+header > nav > ul > li > a{
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 16px;
+	color:#C0C0C0;
+	margin:0 40px 0 40px;
+	text-decoration:none;
+}
+a.navBar:hover{
+	color:white;
+	padding-bottom:12px;
+	border-bottom-style:solid;
+	border-bottom-color:red;
+	border-bottom-width:3px;
+}
+a.home{
+	color:red;
+	text-shadow:0 0 10px #FF0000;
+	font-weight:bold;
+	text-decoration:none;
+}
+a.home:hover {
+	text-decoration:none;
+	text-shadow:none;
+	color:red;
+}
+section > div{
+	position:relative;
+	margin:-6px 0 0 -7px;
+}
+section > div > img{
+	width:1422px;
+	height:780px;
+}
+section > div > h1{
+	position:absolute; 
+	top:250px; 
+	left:150px;
+	color:white;
+	font:38px 'Roboto', sans-serif;
+	text-shadow: black 4px 4px 6px;
+	padding-bottom:15px;
+	border-bottom-style:solid;
+	border-bottom-color:red;
+	border-bottom-width:1px;
+}
+section > div > h2{
+	position:absolute; 
+	top:350px; 
+	left:150px;
+	width:500px;
+	color:white;
+	font:18px 'Didact Gothic', sans-serif;
+}
+div.content{
+	display:none;
+}
+div.anchor{
+	position:absolute;
+	bottom:30px;
+	left:670px;
+}
+#rightNav{
+	position:absolute;
+	top:240px;
+	width:300px; 
+	height:300px;
+	right:60px;
+	line-height:25px;
+	text-transform:uppercase;
+}
+aside > nav > ul{
+	text-align:right;
+}
+aside > nav > ul > li > a{
+	font:16px 'Didact Gothic', sans-serif;
+	color:#C0C0C0;
+	text-decoration:none;
+}
+aside > nav > ul > li > a:hover {
+	color:white;
+	text-decoration:none;
+}
+#news{
+	width:1200px;
+	height:1000px;
+	border:2px solid #505050;
+	border-radius:20px;
+	background-color:#808080;
+	margin:-4px 0 0 100px;
+}
+#news article{
+	margin:0 40px 0 25px;
+	position:relative;
+	float:left;
+	width:330px;
+	height:500px;
+}
+#news figure{
+	margin:0 0 0 25px;
+	height:310px;
+	width:310px;
+}
+#news video{
+	width:300px;
+	height:300px;
+}
+#news img{
+	width:300px;
+	height:300px;
+}
+#news h6{
+	font:14px 'Didact Gothic', sans-serif;
+	color:#D0D0D0;
+	text-align:left;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin:0 0 0 25px;
+}
+#news p{
+	font:14px 'Didact Gothic', sans-serif;
+	color:#D0D0D0;
+	height:88px;
+	text-align:left;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin:0 0 0 25px;
+	border-bottom-style:solid;
+	border-bottom-color:#B8B8B8;
+	border-bottom-width:1px;
+}
+#news h4{
+	font:bold 14px 'Roboto', sans-serif;
+	color:#303030;
+	text-align:left;
+	margin:0 0 0 25px;
+	padding:0 0 5px 0;
+	border-bottom-style:solid;
+	border-bottom-color:#B8B8B8;
+	border-bottom-width:1px;
+}
+#news .last{
+	font:14px 'Didact Gothic', sans-serif;
+	color:#D0D0D0;
+	height:88px;
+	text-align:left;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin:0 0 0 25px;
+	border-bottom-width:0px;
+}
+#copyRight{
+	margin:-17px 0 0 -6px;
+	width:1421px;
+	height:60px;
+	float:bottom;
+	position:relative;
+	background-color:black;
+	font:16px 'Didact Gothic', sans-serif;
+	color:#606060;
+	text-align:center;
+}
+#copyRight p{
+	padding:18px 0 0 0;
+}
+
+/* ==========================================================================
+	Media Queries
+   ========================================================================== */
+@media (max-width:600px) {
+header > nav{
+	display:none;
+}
+#mobile{
+	display:block;
+	position:fixed;
+	top:0px;
+	width:100%;
+	height:200px;
+	background:black;
+	opacity:0.5;
+	z-index: 1;
+}
+#mobile a{
+	font-family:'Didact Gothic', sans-serif;
+	font-size:20px;
+	color:red;
+	text-decoration:none;
+	text-transform:uppercase;
+	position:relative;
+	top:15px;
+}
+#menu{
+	float:right;
+	position:relative;
+	font-family:'Didact Gothic', sans-serif;
+	font-size:20px;
+	color:white;
+	background:none;
+	border:none;
+	text-transform:uppercase;
+	margin:10px 20px 0 0;
+}
+#list{
+	float:right;
+	list-style:none;
+	display:none;
+	line-height:30px;
+	text-align:right;
+	width:300px;
+	margin:10px 5px 0 0;
+}
+#list li {
+	float:none;
+	position:relative;
+}
+#list a{
+	font-family:'Didact Gothic', sans-serif;
+	font-size:20px;
+	color:white;
+	text-decoration:none;
+}
+main{
+	display:none;
+}
+#rightNav{
+	display:none;
+}
+#news{
+	width:360px;
+	height:100%;
+	border:2px solid #505050;
+	border-radius:20px;
+	background-color:#808080;
+	margin:200px 0 0 15px;
+}
+#news article{
+	margin:0 40px 0 0;
+	float:none;
+	position:relative;
+	width:350px;
+	height:500px;
+}
+#copyRight{
+	margin:-17px 0 0 -6px;
+	width:100%;
+	height:60px;
+	float:bottom;
+	position:relative;
+	background-color:black;
+	font:16px 'Didact Gothic', sans-serif;
+	color:#606060;
+	text-align:center;
+}
+}

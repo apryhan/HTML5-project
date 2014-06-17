@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<title>City of Chicago - The source for information about City services, departments, programs</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+	<link href="css/main.css" rel="stylesheet" />
+	<script src="js/prefixfree.min.js"></script>
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+       $(function() {
+			var curPage="";
+			$("#rightNav a").click(function() {
+				$("#marquee").hide();
+				if (curPage.length) {
+				$("#"+curPage).hide();
+			}
+				curPage=$(this).data("page");
+				$("#"+curPage).show();
+			});
+		});
+		$(document).ready(function(){
+			$("#menu").click(function(){
+				$("#list").toggle();
+			});
+		});
+    </script>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a class="navBar" href="http://www.cityofchicago.org/city/en/about.html">About</a></li>
+				<li><a class="navBar" href="http://www.cityofchicago.org/city/en/svcs/find.html">Services</a></li>
+				<li><a class="home" href="index.html">Chicago</a></li>
+				<li><a class="navBar" href="http://www.cityofchicago.org/city/en/chicagogovt.html">Government</a></li>
+				<li><a class="navBar" href="http://www.cityofchicago.org/city/en/progs.html">Programs</a></li>
+			</ul>
+		</nav>
+		<nav id="mobile">
+			<a href="index.html">Chicago</a>
+			<button id="menu">Menu</button>
+			<ul id="list">
+				<li><a href="http://www.cityofchicago.org/city/en/about.html">About</a></li>
+				<li><a href="http://www.cityofchicago.org/city/en/svcs/find.html">Services</a></li>
+				<li><a href="http://www.cityofchicago.org/city/en/chicagogovt.html">Government</a></li>
+				<li><a href="http://www.cityofchicago.org/city/en/progs.html">Programs</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<div id="page1" class="content">
+				<img src="images/L061.jpg" alt="marquee1">
+				<h1>Chicago Business</h1><br>
+				<h2>Business news and analysis including healthcare, real estate, manufacturing, government, sports and more</h2>
+			</div>
+			<div id="page2" class="content">
+				<img src="images/L018.jpg" alt="marquee2">
+				<h1>Chicago Culture & Recreation</h1><br>
+				<h2>Dedicated to enriching Chicago's artistic vitality and cultural vibrancy</h2>
+			</div>
+			<div id="page3" class="content">
+				<img src="images/L025.jpg" alt="marquee3">
+				<h1>Chicago Environment</h1><br>
+				<h2>Highlighted & Commended In Environment & Energy</h2>
+			</div>
+			<div id="page4" class="content">
+				<img src="images/L014.jpg" alt="marquee4">
+				<h1>Chicago Housing & Development</h1><br>
+				<h2>Provides a focused approach to city improvements involving economic development, housing</h2>
+			</div>
+			<div id="page5" class="content">
+				<img src="images/L082.JPG" alt="marquee5">
+				<h1>Chicago Social Services</h1><br>
+				<h2>Offers a range of funding opportunities and technical support for social service providers</h2>
+			</div>
+			<div id="page6" class="content">
+				<img src="images/S014.jpg" alt="marquee6">
+				<h1>Chicago Civic Services</h1><br>
+				<h2>Mission is to provide the foundation that supports our partners in performing government operations</h2>
+			</div>
+			<div id="page7" class="content">
+				<img src="images/L092.JPG" alt="marquee7">
+				<h1>Chicago Education</h1><br>
+				<h2>provides tools, resources, special programs, and education training for students, job seekers, and professionals 
+				seeking development</h2>
+			</div>
+			<div id="page8" class="content">
+				<img src="images/L083.jpg" alt="marquee8">
+				<h1>Chicago Health</h1><br>
+				<h2>Has a direct impact on the quality of life of this vibrant city</h2>
+			</div>
+			<div id="marquee">
+				<img src="images/Main.jpg" alt="marquee">
+				<h1>City of Chicago</h1><br>
+				<h2>The source for information about city services, departments, programs</h2>
+			</div>
+			<div class="anchor">
+				<a href="#news" class="home">Check the News</a>
+			</div>
+		</section>
+	</main>
+	<aside>		
+		<nav id="rightNav">
+			<ul>
+			  <li><a href="#" data-page="page1">Business</a></li>
+			  <li><a href="#" data-page="page2">Culture & Recreation</a></li>
+			  <li><a href="#" data-page="page3">Environment</a></li>
+			  <li><a href="#" data-page="page4">Housing & Development</a></li>
+			  <li><a href="#" data-page="page5">Social Services</a></li>
+			  <li><a href="#" data-page="page6">Civic Services</a></li>
+			  <li><a href="#" data-page="page7">Education</a></li>
+			  <li><a href="#" data-page="page8">Health</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<section id="news">
+		<article>
+			<h6>2nd, March 2014</h6>
+			<figure>
+				<img src="images/L083.jpg" alt="Chicago1">
+			</figure>
+			<header>
+				<h4>Jimmy Fallon, Chicago mayor take a chilly dip</h4>
+			</header>
+			<p>CHICAGO - Comedian Jimmy Fallon took a quick but icy dip in Lake Michigan - dressed in a full suit and tie - eyes bulging as he darted out of the slushy water and headed straight for a pile of dry towels.</p>
+		</article>
+		<article>
+			<h6>28th, February 2014</h6>
+			<figure>
+				<img src="images/L082.JPG" alt="Chicago2">
+			</figure>
+			<header>
+				<h4>Polar Plunge could set hearts aflutter, healthy face no danger</h4>
+			</header>
+			<p>The Centers for Disease Control and Prevention also recommends the following precautions for cold water immersion: wear proper clothing, avoid cotton, instead go for wool and synthetics.</p>
+		</article>
+		<article>
+			<h6>27th, February 2014</h6>
+			<figure>
+				<img src="images/L092.JPG" alt="Chicago3">
+			</figure>
+			<header>
+				<h4>Record crowd watches Royals beat Cubs in Mesa</h4>
+			</header>
+			<p>MESA, Ariz. (AP) - Mike Moustakas homered twice, Eric Hosmer added three hits and the Kansas City Royals beat the Chicago Cubs 5-3 on Sunday.</p>
+		</article>
+		<article>
+			<h6>28th, February 2014</h6>
+			<figure>
+				<img src="images/L025.jpg" alt="Chicago5">
+			</figure>
+			<header>
+				<h4>5-run 9th helps White Sox beat Rangers</h4>
+			</header>
+			<h6>SURPRISE, Ariz. (AP) - Neftali Feliz and Joakim Soria, the leading candidates to replace Joe Nathan as the Texas closer, had contrasting results in the Rangers' 9-7 loss to the Chicago White Sox on Sunday.</h6>
+		</article>
+		<article>
+			<h6>1st, March 2014</h6>
+			<figure>
+				<video controls>
+					<source src="video/Bear.mp4" type="video/mp4">
+				</video>
+			</figure>
+			<header>
+				<h4>Brookfield Zoo celebrates International Polar Bear Day</h4>
+			</header>
+			<p class="last">CHICAGO (FOX 32 News) -
+		Thursday is International Polar Bear Day! The Chicago Zoological Society and Brookfield Zoo are celebrating the day by spreading the word about reducing carbon footprints.</p>
+		</article>
+		<article>
+			<h6>2nd, March 2014</h6>
+			<figure>
+				<img src="images/L018.jpg" alt="Chicago6">
+			</figure>
+			<header>
+				<h4>Dolphin calves thrive at Brookfield Zoo</h4>
+			</header>
+			<p class="last">CHICAGO (FOX 32 News) -
+		Chicago Zoological Society and Brookfield Zoo officials are cautiously optimistic about the progress of two male dolphin calves born at the zoo earlier this year.</p>
+		</article>
+	</section>
+	<div>
+	<footer id="copyRight">
+	<p>&copy;2014 April Han</p>
+	</footer>
+	</div>
+	<!--All images property of April Han, the video is from www.w3schools.com-->
+</body>
+</html>
