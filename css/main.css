@@ -403,7 +403,7 @@ aside > nav > ul > li > a:hover {
 		color:white;
 		text-decoration:none;
 	}
-	main{
+	#main, aside{
 		display:none;
 	}
 	#rightNav{
